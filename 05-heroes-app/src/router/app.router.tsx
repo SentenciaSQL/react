@@ -19,12 +19,16 @@ export const appRouter = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "hero/1",
+        path: "heroes/:idSlug",
         element: <HeroPage />,
       },
       {
         path: "search",
         element: <SearchPage />,
+      },
+      {
+        path: "*",
+        element: <Navigate to={"/"} />,
       },
       {
         path: "*",
